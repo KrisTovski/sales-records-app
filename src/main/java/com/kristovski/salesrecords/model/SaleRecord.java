@@ -2,7 +2,6 @@ package com.kristovski.salesrecords.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.text.Bidi;
 import java.time.LocalDate;
 
 @Entity
