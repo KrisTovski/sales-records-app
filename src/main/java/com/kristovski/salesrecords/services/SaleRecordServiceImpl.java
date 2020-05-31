@@ -17,13 +17,14 @@ public class SaleRecordServiceImpl implements SaleRecordService {
         this.saleRecordRepository = saleRecordRepository;
     }
 
+
     @Override
     public List<SaleRecord> findAll() {
-        return null;
+        return (List<SaleRecord>) saleRecordRepository.findAll();
     }
 
     @Override
-    public SaleRecord findById(int theId) {
+    public SaleRecord findById(long theId) {
         return null;
     }
 
@@ -33,7 +34,7 @@ public class SaleRecordServiceImpl implements SaleRecordService {
     }
 
     @Override
-    public void deleteById(int theId) {
+    public void deleteById(long theId) {
 
     }
 

@@ -1,0 +1,1 @@
+INSERT  INTO SALE_RECORD(id, sale_date, sale) VALUES (1, TO_DATE('01-12-2019','dd-MM-yyyy'), 60.45)
