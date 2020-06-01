@@ -4,13 +4,14 @@ import com.kristovski.salesrecords.model.SaleRecord;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 public interface SaleRecordService {
 
 
     public List<SaleRecord> findAll();
 
-    public SaleRecord findById(long theId);
+    public Optional<SaleRecord> findById(long theId);
 
     public void save(SaleRecord theSaleRecord);
 
