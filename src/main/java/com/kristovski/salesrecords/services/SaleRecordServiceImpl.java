@@ -2,7 +2,6 @@ package com.kristovski.salesrecords.services;
 
 import com.kristovski.salesrecords.model.SaleRecord;
 import com.kristovski.salesrecords.repositories.SaleRecordRepository;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
