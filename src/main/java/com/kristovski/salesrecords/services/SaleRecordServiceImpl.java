@@ -31,7 +31,7 @@ public class SaleRecordServiceImpl implements SaleRecordService {
     }
 
     @Override
-    public void save(SaleRecord theSaleRecord) {
+    public void saveRecord(SaleRecord theSaleRecord) {
 
     }
 

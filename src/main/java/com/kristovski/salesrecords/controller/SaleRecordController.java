@@ -2,9 +2,7 @@ package com.kristovski.salesrecords.controller;
 
 import com.kristovski.salesrecords.model.SaleRecord;
 import com.kristovski.salesrecords.services.SaleRecordService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,5 +23,12 @@ public class SaleRecordController {
     @GetMapping("/records/{id}")
     public List<SaleRecord> getSingleSaleRecord(@PathVariable long id){
         throw new IllegalArgumentException("Not implemented yet!");
+    }
+
+    @PostMapping("/records")
+    public SaleRecord addSaleRecord(@RequestBody SaleRecord theSaleRecord){
+        theSaleRecord.setId(0);
+        saleRecordService.saveRecord(theSaleRecord);
+        return theSaleRecord;
     }
 }

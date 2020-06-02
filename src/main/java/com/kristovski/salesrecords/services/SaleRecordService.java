@@ -13,7 +13,7 @@ public interface SaleRecordService {
 
     public Optional<SaleRecord> findById(long theId);
 
-    public void save(SaleRecord theSaleRecord);
+    public void saveRecord(SaleRecord theSaleRecord);
 
     public void deleteById(long theId);
 
